@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://www.wallart.com/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05913-small.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+}
+header .container{
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.logo{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.logo p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 550px;
+    color: white;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    display: flex;
+    gap: 14px;
+    list-style: none;
+}
+li{
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.main{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+.main img{
+    display: block;
+    margin: auto;
+    height: 100%;
+    filter: drop-shadow(20px 40px rgba(0, 0, 0, 0.622));
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    height: 100%;
+}
+.content .container p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(186, 145, 94);
+    text-align: center;
+}
+.todo{
+    cursor: alias 6 19, auto;
+    display: flex;
+    padding: 14px;
+}
+.todo_value{
+    cursor: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 550px;
+    color: bisque;
+    flex-grow: 1;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.todo_checkbox{
+    cursor: inherit;
+}
+.todo:has(.todo_checkbox:checked){
+    color:rgb(61, 4, 4);
+    background: rgb(16, 14, 14);
+    text-decoration: line-through 1px;
+
+}
